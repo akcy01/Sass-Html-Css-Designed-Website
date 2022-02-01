@@ -1,0 +1,112 @@
+body{
+    font-family: oguzun-fontu;
+    color:black;
+}
+
+
+.fullscreen-header{
+    font-family: oguzun-fontu;
+    
+    height: 100vh;
+    @include flexCenter;
+    flex-direction: column;
+    background-image:linear-gradient(to right bottom rgba(255, 255, 0, 0.308),rgba(0, 0, 0, 0.185)), url(/tüm.piliç.jpg);
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: center;
+}
+
+.nav{
+    background-color:rgb(24, 22, 22);
+    padding: .4rem .4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    text-align: center;
+
+
+    @include responsive(small){
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    &__list{
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        align-items: center;
+
+        &-item{
+            text-decoration: none;
+            color: white;
+            margin-left: 1rem;
+
+            &:hover{
+            color:orange ;
+            }
+    }
+
+    
+  }
+}
+
+.section{
+    
+    margin: 1rem 0;
+    padding: 1rem;
+    &-title{
+        text-align: center;
+        margin: 1rem;
+    }
+
+    &--accent{
+        background-color:rgb(24, 22, 22);
+    }
+}
+
+
+.misyonumuz-grid{
+    display: grid;
+    grid-template-columns: minmax(auto,500px);
+    row-gap: 2rem;
+    padding: .5rem;
+    &__item{
+        @include flexCenter
+    }
+
+    &__resim{
+        width: 20%;
+    }
+
+    &__yazi{
+        margin-left: 0.9rem;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    @include responsive(medium){
+        grid-template-columns: repeat(2, minmax(auto 500px));
+        justify-content: center;
+    }
+}
+
+.hizmetlerimiz-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0 auto;
+
+    @include responsive(medium){
+        flex-direction: row;
+        max-width: 90%;
+    }
+    
+    @include responsive(desktop){
+        flex-direction: row;
+        max-width: 80%;
+    }
+}
+

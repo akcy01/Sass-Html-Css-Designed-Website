@@ -1,0 +1,87 @@
+.site-logo{
+    height: 3rem;
+    width: 3rem;
+
+}
+
+.header-title{
+    font-size: 3rem;
+    color: white;
+    animation: soldanGelenYazi 2s;
+}
+
+.header-subtitle{
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    animation: sagdanGelenYazi 2s;
+}
+
+.btn{
+    text-decoration: none;
+    color:white;
+    background-color: orange;
+    border-radius: 10000px;
+    padding: .25rem 1rem;
+    border: none;
+
+
+    &:hover{
+        background-color: rgb(24, 22, 22);
+    }
+}
+
+.icon-asagi{
+    position: absolute;
+    width: 2.5rem;
+    bottom: 1rem;
+    animation:ortayaCik2 1s alternate infinite;
+}
+
+.hizmetlerimiz-card{
+    text-align: center;
+    padding: 1rem;
+    margin: .5rem 1rem;
+    border: 1px solid black;
+    border-radius: 0.6rem;
+    transition: .5s ease-in-out;
+    flex: 1;
+    
+    &:hover{
+        transform: scale(0.9);
+    }
+
+    &--perakende{
+        font-family: akcayın-fontu;
+        font-size: 1.5rem;
+        background-color: orange;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    &--toptan{
+        font-family: akcayın-fontu;
+        font-size: 1.5rem;
+        background-color: orange;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center center;
+    }
+
+    &--doğrama{
+        font-family: akcayın-fontu;
+        font-size: 1.5rem;
+        background-color: orange;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+    }
+}
+
+.hizmetlerimiz-card__yazi{
+    font-family: akcayın-fontu;
+    font-size: 1.5rem;
+}
